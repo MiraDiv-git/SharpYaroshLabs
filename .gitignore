@@ -1,4 +1,3 @@
-/.idea
-/Lab1/.idea
-**/bin
-**/obj
+**/.idea/
+**/bin/
+**/obj/
