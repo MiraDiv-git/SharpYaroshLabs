@@ -6,7 +6,7 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            bool testMode = false;
+            bool testMode = true;
 
             if (testMode)
             {
@@ -34,20 +34,20 @@ namespace lab1
                 switch (input)
                 {
                     case "1":
-                        Z1.JustDoIt();
+                        Task1.JustDoIt();
                         break;
                     
                     case "2":
-                        Z2.JustDoIt();
+                        Task2.JustDoIt();
                         break;
                     case "3":
-                        Z3.JustDoIt();
+                        Task3.JustDoIt();
                         break;
                     case "4":
-                        Z4.JustDoIt();
+                        Task4.JustDoIt();
                         break;
                     case "5":
-                        Z5.JustDoIt();
+                        Task5.JustDoIt();
                         break;
                         
                     default:

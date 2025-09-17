@@ -1,6 +1,6 @@
 namespace lab1;
 
-public class Z1
+public class Task1
 {
     public static bool IsEven(int number)
     {

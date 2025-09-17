@@ -2,7 +2,7 @@ using System;
 
 namespace lab1;
 
-public class Z2
+public class Task2
 {
     public static void JustDoIt()
     {

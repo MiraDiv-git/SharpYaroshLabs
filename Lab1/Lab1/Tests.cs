@@ -6,60 +6,60 @@ public class Tests
     {
         Tests tests = new Tests();
 
-        tests.Z1_Tests();
+        tests.Task1_Tests();
         Console.WriteLine("");
         
-        tests.Z2_Tests();
+        tests.Task2_Tests();
         Console.WriteLine("");
         
-        tests.Z3_Tests();
+        tests.Task3_Tests();
         Console.WriteLine("");
         
-        tests.Z4_Tests();
+        tests.Task4_Tests();
         Console.WriteLine("");
         
-        tests.Z5_Tests();
+        tests.Task5_Tests();
     }
 
-    private void Z1_Tests()
+    private void Task1_Tests()
     {
         Console.WriteLine("\n\n  ////////////////\n //// Task 1 ////\n////////////////\n\n");
         
-        Console.WriteLine("Testing Z1.IsEven()");
+        Console.WriteLine("Testing Task1.IsEven()");
         
         int a = 12;
         int b = 11;
         
-        Z1.IsEven(a);
-        Z1.IsEven(b);
+        Task1.IsEven(a);
+        Task1.IsEven(b);
         
-        Console.WriteLine($"A value: {a}, {Z1.IsEven(12)}\nB value: {b}, {Z1.IsEven(b)}");
+        Console.WriteLine($"A value: {a}, {Task1.IsEven(12)}\nB value: {b}, {Task1.IsEven(b)}");
     }
 
-    private void Z2_Tests()
+    private void Task2_Tests()
     {
         Console.WriteLine("\n\n  ////////////////\n //// Task 2 ////\n////////////////\n\n");
         
-        Console.WriteLine("Testing Z2.GenerateRandomArray()");
+        Console.WriteLine("Testing Task2.GenerateRandomArray()");
         
         int size = 10;
         int min = 1;
         int max = 100;
         
-        int[] numbers = Z2.GenerateRandomArray(size, min, max);
+        int[] numbers = Task2.GenerateRandomArray(size, min, max);
         
         Console.Write("Generated array: ");
         foreach (int number in numbers)
         {
             Console.Write(number + " ");
         }
-        Console.WriteLine($"\nTesting Z2.GetSum(): {Z2.GetSum(numbers)}");
-        Console.WriteLine($"Testing Z2.GetAverage(): {Z2.GetAverage(numbers):F2}");
-        Console.WriteLine($"Testing Z2.GetMin(): {Z2.GetMin(numbers)}");
-        Console.WriteLine($"Testing Z2.GetMax(): {Z2.GetMax(numbers)}");
+        Console.WriteLine($"\nTesting Task2.GetSum(): {Task2.GetSum(numbers)}");
+        Console.WriteLine($"Testing Task2.GetAverage(): {Task2.GetAverage(numbers):F2}");
+        Console.WriteLine($"Testing Task2.GetMin(): {Task2.GetMin(numbers)}");
+        Console.WriteLine($"Testing Task2.GetMax(): {Task2.GetMax(numbers)}");
     }
 
-    private void Z3_Tests()
+    private void Task3_Tests()
     {
         Console.WriteLine("\n\n  ////////////////\n //// Task 3 ////\n////////////////\n\n");
         
@@ -71,20 +71,20 @@ public class Tests
         int age6 = -20;
         int age7 = 82374;
         
-        Console.WriteLine("Testing Z3.ClassifyAge()");
+        Console.WriteLine("Testing Task3.ClassifyAge()");
         Console.WriteLine("---------------------------------------------------------------------------------------------\n" 
                           + "Age\t\tAnswer\n"
-                          + $"\n{age1}\t\t{Z3.ClassifyAge(age1)}"
-                          + $"\n{age2}\t\t{Z3.ClassifyAge(age2)}"
-                          + $"\n{age3}\t\t{Z3.ClassifyAge(age3)}"
-                          + $"\n{age4}\t\t{Z3.ClassifyAge(age4)}"
-                          + $"\n{age5}\t\t{Z3.ClassifyAge(age5)}"
-                          + $"\n{age6}\t\t{Z3.ClassifyAge(age6)}"
-                          + $"\n{age7}\t\t{Z3.ClassifyAge(age7)}"
+                          + $"\n{age1}\t\t{Task3.ClassifyAge(age1)}"
+                          + $"\n{age2}\t\t{Task3.ClassifyAge(age2)}"
+                          + $"\n{age3}\t\t{Task3.ClassifyAge(age3)}"
+                          + $"\n{age4}\t\t{Task3.ClassifyAge(age4)}"
+                          + $"\n{age5}\t\t{Task3.ClassifyAge(age5)}"
+                          + $"\n{age6}\t\t{Task3.ClassifyAge(age6)}"
+                          + $"\n{age7}\t\t{Task3.ClassifyAge(age7)}"
                           + "\n---------------------------------------------------------------------------------------------\n");
     }
 
-    private void Z4_Tests()
+    private void Task4_Tests()
     {
         Console.WriteLine("\n\n  ////////////////\n //// Task 4 ////\n////////////////\n\n");
         
@@ -105,28 +105,28 @@ public class Tests
         double b4 = 0;
         double c4 = 86745;
         Console.WriteLine($"First triangle: A: {a1}, B: {b1}, C: {a1}" +
-                          $"\nTesting Z4.IsValidTriangle(): {Z4.IsValidTriangle(a1, b1, a1)}" +
-                          $"\nTesting Z4.GetPerimeter(): {Z4.GetPerimeter(a1, b1, a1)}" +
-                          $"\nTesting Z4.GetArea(): {Z4.GetArea(a1, b1, a1)}" +
-                          $"\nTesting Z4.GetTriangleType(): {Z4.GetTriangleType(a1, b1, a1)}\n");
+                          $"\nTesting Task4.IsValidTriangle(): {Task4.IsValidTriangle(a1, b1, a1)}" +
+                          $"\nTesting Task4.GetPerimeter(): {Task4.GetPerimeter(a1, b1, a1)}" +
+                          $"\nTesting Task4.GetArea(): {Task4.GetArea(a1, b1, a1)}" +
+                          $"\nTesting Task4.GetTriangleType(): {Task4.GetTriangleType(a1, b1, a1)}\n");
         Console.WriteLine($"Second triangle: A: {a2}, B: {a2}, C: {a2}" +
-                          $"\nTesting Z4.IsValidTriangle(): {Z4.IsValidTriangle(a2, a2, a2)}" +
-                          $"\nTesting Z4.GetPerimeter(): {Z4.GetPerimeter(a2, a2, a2)}" +
-                          $"\nTesting Z4.GetArea(): {Z4.GetArea(a2, a2, a2)}" +
-                          $"\nTesting Z4.GetTriangleType(): {Z4.GetTriangleType(a2, a2, a2)}\n");
+                          $"\nTesting Task4.IsValidTriangle(): {Task4.IsValidTriangle(a2, a2, a2)}" +
+                          $"\nTesting Task4.GetPerimeter(): {Task4.GetPerimeter(a2, a2, a2)}" +
+                          $"\nTesting Task4.GetArea(): {Task4.GetArea(a2, a2, a2)}" +
+                          $"\nTesting Task4.GetTriangleType(): {Task4.GetTriangleType(a2, a2, a2)}\n");
         Console.WriteLine($"Third triangle: A: {a3}, B: {b3}, C: {c3}" +
-                          $"\nTesting Z4.IsValidTriangle(): {Z4.IsValidTriangle(a3, b3, c3)}" +
-                          $"\nTesting Z4.GetPerimeter(): {Z4.GetPerimeter(a3, b3, c3)}" +
-                          $"\nTesting Z4.GetArea(): {Z4.GetArea(a3, b3, c3)}" +
-                          $"\nTesting Z4.GetTriangleType(): {Z4.GetTriangleType(a3, b3, c3)}\n");
+                          $"\nTesting Task4.IsValidTriangle(): {Task4.IsValidTriangle(a3, b3, c3)}" +
+                          $"\nTesting Task4.GetPerimeter(): {Task4.GetPerimeter(a3, b3, c3)}" +
+                          $"\nTesting Task4.GetArea(): {Task4.GetArea(a3, b3, c3)}" +
+                          $"\nTesting Task4.GetTriangleType(): {Task4.GetTriangleType(a3, b3, c3)}\n");
         Console.WriteLine($"Impossible triangle: A: {a4}, B: {b4}, C: {c4}" +
-                          $"\nTesting Z4.IsValidTriangle(): {Z4.IsValidTriangle(a4, b4, c4)}" +
-                          $"\nTesting Z4.GetPerimeter(): {Z4.GetPerimeter(a4, b4, c4)}" +
-                          $"\nTesting Z4.GetArea(): {Z4.GetArea(a4, b4, c4)}" +
-                          $"\nTesting Z4.GetTriangleType(): {Z4.GetTriangleType(a4, b4, c4)}\n");
+                          $"\nTesting Task4.IsValidTriangle(): {Task4.IsValidTriangle(a4, b4, c4)}" +
+                          $"\nTesting Task4.GetPerimeter(): {Task4.GetPerimeter(a4, b4, c4)}" +
+                          $"\nTesting Task4.GetArea(): {Task4.GetArea(a4, b4, c4)}" +
+                          $"\nTesting Task4.GetTriangleType(): {Task4.GetTriangleType(a4, b4, c4)}\n");
     }
 
-    private void Z5_Tests()
+    private void Task5_Tests()
     {
         Console.WriteLine("\n\n  ////////////////\n //// Task 5 ////\n////////////////\n\n");
         
@@ -139,7 +139,7 @@ public class Tests
             new int[] { 78, 83, 75, 86, 80, 72, 88, 82, 74, 85, 79, 84, 76, 87, 73, 89, 71, 81, 77, 90, 70 } // група 5
         };
 
-        Console.WriteLine("Testing Z5.PrintGroupStatistics");
-        Z5.PrintGroupStatistics(groups);
+        Console.WriteLine("Testing Task5.PrintGroupStatistics");
+        Task5.PrintGroupStatistics(groups);
     }
 }

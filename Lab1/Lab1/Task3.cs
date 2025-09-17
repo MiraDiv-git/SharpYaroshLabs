@@ -1,6 +1,6 @@
 namespace lab1;
 
-public class Z3
+public class Task3
 {
     public static void JustDoIt()
     {
