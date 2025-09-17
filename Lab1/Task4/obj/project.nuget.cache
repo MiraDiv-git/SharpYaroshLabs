@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/GHQHOC5aH8=",
+  "success": true,
+  "projectFilePath": "/home/miradiv/Desktop/учбоба/шарпы/SharpYaroshLabs/Lab1/Task4/Task4.csproj",
+  "expectedPackageFiles": [
+    "/home/miradiv/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.19/microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
