@@ -28,7 +28,7 @@ public class Z2
         Console.ReadKey();
     }
     
-    private static int[] GenerateRandomArray(int size, int min, int max)
+    public static int[] GenerateRandomArray(int size, int min, int max)
     {
         Random random = new Random();
         int[] array = new int[size];
@@ -41,7 +41,7 @@ public class Z2
         return array;
     }
     
-    private static int GetSum(int[] numbers)
+    public static int GetSum(int[] numbers)
     {
         int sum = 0;
         foreach (int number in numbers)
@@ -51,12 +51,12 @@ public class Z2
         return sum;
     }
     
-    private static double GetAverage(int[] numbers)
+    public static double GetAverage(int[] numbers)
     {
         return (double)GetSum(numbers) / numbers.Length;
     }
     
-    private static int GetMin(int[] numbers)
+    public static int GetMin(int[] numbers)
     {
         int min = numbers[0];
         foreach (int number in numbers)
@@ -69,7 +69,7 @@ public class Z2
         return min;
     }
     
-    private static int GetMax(int[] numbers)
+    public static int GetMax(int[] numbers)
     {
         int max = numbers[0];
         foreach (int number in numbers)

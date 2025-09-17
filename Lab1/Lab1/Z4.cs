@@ -51,23 +51,23 @@ public class Z4
         Console.ReadKey();
     }
     
-    private static bool IsValidTriangle(double a, double b, double c)
+    public static bool IsValidTriangle(double a, double b, double c)
     {
         return a + b > c && a + c > b && b + c > a;
     }
     
-    private static double GetPerimeter(double a, double b, double c)
+    public static double GetPerimeter(double a, double b, double c)
     {
         return a + b + c;
     }
     
-    private static double GetArea(double a, double b, double c)
+    public static double GetArea(double a, double b, double c)
     {
         double p = GetPerimeter(a, b, c) / 2; // півпериметр
         return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
     }
     
-    private static string GetTriangleType(double a, double b, double c)
+    public static string GetTriangleType(double a, double b, double c)
     {
         if (Math.Abs(a - b) < 0.0001 && Math.Abs(b - c) < 0.0001)
         {

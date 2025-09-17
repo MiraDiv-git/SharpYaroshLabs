@@ -4,9 +4,17 @@ namespace lab1
 {
     public class Program
     {
-        
         static void Main(string[] args)
         {
+            bool testMode = false;
+
+            if (testMode)
+            {
+                Tests.Run();
+                Console.ReadKey();
+                Environment.Exit(0);
+            }
+            
             while (true)
             {
                 Console.Clear();

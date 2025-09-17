@@ -41,7 +41,7 @@ public class Z5
         }
     }
     
-    private static double GetAverage(int[] marks)
+    public static double GetAverage(int[] marks)
     {
         if (marks == null || marks.Length == 0)
             return 0;
@@ -54,7 +54,7 @@ public class Z5
         return (double)sum / marks.Length;
     }
     
-    private static int GetMin(int[] marks)
+    public static int GetMin(int[] marks)
     {
         if (marks == null || marks.Length == 0)
             return 0;
@@ -68,7 +68,7 @@ public class Z5
         return min;
     }
     
-    private static int GetMax(int[] marks)
+    public static int GetMax(int[] marks)
     {
         if (marks == null || marks.Length == 0)
             return 0;

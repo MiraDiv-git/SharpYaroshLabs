@@ -27,7 +27,7 @@ public class Z3
         Console.ReadKey();
     }
 
-    private static string ClassifyAge(int age)
+    public static string ClassifyAge(int age)
     {
         if (age <= 0 || age >= 120)
         {

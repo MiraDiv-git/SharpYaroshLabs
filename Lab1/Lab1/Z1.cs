@@ -2,7 +2,7 @@ namespace lab1;
 
 public class Z1
 {
-    static bool IsEven(int number)
+    public static bool IsEven(int number)
     {
         return number % 2 == 0;
     }
