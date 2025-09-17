@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "45rUOj5drXWRV7OGbpVPOrgG4A9yXsOEjFAm8Gi6CJN5LfgTv1cNQzqzUJp5dOTMF92bhkv4Vyc8rxb8MlLoxw==",
+  "success": true,
+  "projectFilePath": "/home/miradiv/RiderProjects/lab1/lab1.csproj",
+  "expectedPackageFiles": [
+    "/home/miradiv/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.19/microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

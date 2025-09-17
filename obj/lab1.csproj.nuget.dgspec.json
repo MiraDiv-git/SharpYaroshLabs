@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/miradiv/RiderProjects/Mamoot_Rachul/Mamoot_Rachul/Mamoot_Rachul.csproj": {}
+    "/home/miradiv/RiderProjects/lab1/lab1.csproj": {}
   },
   "projects": {
-    "/home/miradiv/RiderProjects/Mamoot_Rachul/Mamoot_Rachul/Mamoot_Rachul.csproj": {
+    "/home/miradiv/RiderProjects/lab1/lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/miradiv/RiderProjects/Mamoot_Rachul/Mamoot_Rachul/Mamoot_Rachul.csproj",
-        "projectName": "Mamoot_Rachul",
-        "projectPath": "/home/miradiv/RiderProjects/Mamoot_Rachul/Mamoot_Rachul/Mamoot_Rachul.csproj",
+        "projectUniqueName": "/home/miradiv/RiderProjects/lab1/lab1.csproj",
+        "projectName": "lab1",
+        "projectPath": "/home/miradiv/RiderProjects/lab1/lab1.csproj",
         "packagesPath": "/home/miradiv/.nuget/packages/",
-        "outputPath": "/home/miradiv/RiderProjects/Mamoot_Rachul/Mamoot_Rachul/obj/",
+        "outputPath": "/home/miradiv/RiderProjects/lab1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/miradiv/.nuget/NuGet/NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,12 +48,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/miradiv/.dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
