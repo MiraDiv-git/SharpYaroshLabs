@@ -13,6 +13,15 @@ public class Program
         return number % 2 == 0;
     }
     
+    public static string GetMessage(int number)
+    {
+        if (IsEven(number))
+            return "\nДвері відчіняються...\nЗа дверима знаходилось надзвичайно казкове місце." + 
+                   "\nПобачивши знак \"Запоріжжя\" я зрозумів, що я знайшов своє щастя!..\n\nGood Ending";
+        else
+            return "\nДвері так і залишились закритими... \nСхоже, що я ніколи не знайду своє щастя...\n\nBad Ending";
+    }
+    
     public static void JustDoIt()
     {
         Console.Clear();
@@ -24,14 +33,7 @@ public class Program
             
         if (int.TryParse(input, out int x))
         {
-            if (IsEven(x))
-            {
-                Console.WriteLine("\nДвері відчіняються...\nЗа дверима знаходилось надзвичайно казкове місце. \nПобачивши знак \"Запоріжжя\" я зрозумів, що я знайшов своє щастя!..\n\nGood Ending");
-            }
-            else
-            {
-                Console.WriteLine("\nДвері так і залишились закритими... \nСхоже, що я ніколи не знайду своє щастя...\n\nBad Ending");
-            }
+            Console.WriteLine(GetMessage(x));
         }
         else
         {
