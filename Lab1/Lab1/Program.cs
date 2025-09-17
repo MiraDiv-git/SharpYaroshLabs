@@ -6,7 +6,7 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            bool testMode = true;
+            bool testMode = false;
 
             if (testMode)
             {
