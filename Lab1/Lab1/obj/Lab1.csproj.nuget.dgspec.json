@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/miradiv/RiderProjects/lab1/lab1.csproj": {}
+    "/home/miradiv/Desktop/учбоба/шарпы/SharpYaroshLabs/Lab1/Lab1/Lab1.csproj": {}
   },
   "projects": {
-    "/home/miradiv/RiderProjects/lab1/lab1.csproj": {
+    "/home/miradiv/Desktop/учбоба/шарпы/SharpYaroshLabs/Lab1/Lab1/Lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/miradiv/RiderProjects/lab1/lab1.csproj",
-        "projectName": "lab1",
-        "projectPath": "/home/miradiv/RiderProjects/lab1/lab1.csproj",
+        "projectUniqueName": "/home/miradiv/Desktop/учбоба/шарпы/SharpYaroshLabs/Lab1/Lab1/Lab1.csproj",
+        "projectName": "Lab1",
+        "projectPath": "/home/miradiv/Desktop/учбоба/шарпы/SharpYaroshLabs/Lab1/Lab1/Lab1.csproj",
         "packagesPath": "/home/miradiv/.nuget/packages/",
-        "outputPath": "/home/miradiv/RiderProjects/lab1/obj/",
+        "outputPath": "/home/miradiv/Desktop/учбоба/шарпы/SharpYaroshLabs/Lab1/Lab1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/miradiv/.nuget/NuGet/NuGet.Config"
