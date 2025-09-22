@@ -3,6 +3,11 @@ namespace Task1;
 
 public class Program
 {
+    private static string success_message = "\nЗа дверима знаходилось надзвичайно казкове місце." + 
+                                "\nПобачивши знак \"Запоріжжя\" я зрозумів, що я знайшов своє щастя!..\n\nGood Ending";
+
+    private string denial_message = "\nСхоже, що я ніколи не знайду своє щастя...\n\nBad Ending";
+    
     public static void Main()
     {
         JustDoIt();
@@ -16,10 +21,9 @@ public class Program
     public static string GetMessage(int number)
     {
         if (IsEven(number))
-            return "\nДвері відчіняються...\nЗа дверима знаходилось надзвичайно казкове місце." + 
-                   "\nПобачивши знак \"Запоріжжя\" я зрозумів, що я знайшов своє щастя!..\n\nGood Ending";
+            return "Двері відкриваються!";
         else
-            return "\nДвері так і залишились закритими... \nСхоже, що я ніколи не знайду своє щастя...\n\nBad Ending";
+            return "Двері зачинені...";
     }
     
     public static void JustDoIt()

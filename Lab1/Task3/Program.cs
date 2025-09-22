@@ -1,4 +1,4 @@
-﻿// Дико вибачаюсь за джава-стиль
+﻿// Виправлений код з правильною логікою класифікації віку
 namespace Task3;
 
 public class Program
@@ -12,7 +12,7 @@ public class Program
         
         string input = Console.ReadLine();
         
-        Console.WriteLine("\nСтарець послухав мене, нахиливши голову, ніби з невеликим скепсисом.\nАж потім він сказав: ");
+        Console.WriteLine("\nСтарець послухав мене, нахиливши голову, ніби з невеликою скепсисом.\nАж потім він сказав: ");
         int age = int.TryParse(input, out int result) ? result : 0;
         Console.WriteLine("\"" + ClassifyAge(age) + "\"");
 
@@ -30,25 +30,25 @@ public class Program
     
     public static string ClassifyAge(int age)
     {
-        if (age <= 0 || age >= 120)
+        if (age < 0 || age > 120)
         {
-            return "Здається ти мені збрехав. Не може бути такого віку. Ходи геть, брехун!";
+            return "Нереальний вік";
         }
-        else if (age <= 12)
+        else if (age < 12)
         {
-            return "Надто малий ти ще для таких пригод, друже. Йди звідси!";
+            return "Ви дитина";
         }
-        else if (age >= 13 && age < 17)
+        else if (age >= 12 && age <= 17)
         {
-            return "Підліток це добре, але все ще недостатньо. Ходи геть!";
+            return "Підліток";
         }
-        else if (age >= 18 && age < 59)
+        else if (age >= 18 && age <= 59)
         {
-            return "Що ж, ти у гарному віці. Добре, проходь";
+            return "Дорослий";
         }
         else
         {
-            return "Для таких пригод ти вже надто старий. Не пройдеш ти сюди!";
+            return "Пенсіонер";
         }
     }
 }
