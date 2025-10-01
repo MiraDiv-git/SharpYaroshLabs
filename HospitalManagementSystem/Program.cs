@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace HospitalManagementSystem
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+        }
+    }
+}
