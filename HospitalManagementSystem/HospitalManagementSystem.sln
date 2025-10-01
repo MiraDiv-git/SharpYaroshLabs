@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagementSystem", "HospitalManagementSystem.csproj", "{74E9DB15-7AB6-4FF5-8EEA-5C8D0991195E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74E9DB15-7AB6-4FF5-8EEA-5C8D0991195E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E9DB15-7AB6-4FF5-8EEA-5C8D0991195E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E9DB15-7AB6-4FF5-8EEA-5C8D0991195E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E9DB15-7AB6-4FF5-8EEA-5C8D0991195E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
