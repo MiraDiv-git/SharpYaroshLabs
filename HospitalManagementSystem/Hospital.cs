@@ -100,11 +100,11 @@ public class Hospital
     {
         totalPatientsInRooms = Rooms.Sum(room => room.CurrentPatientCount);
 
-        return $"\n=== СТАТИСТИКА ЛІКАРНІ ===\n\n" +
-               $"Кількість лікарів: {Doctors.Count}\n\n" +
-               $"Кількість зареєстрованих пацієнтів: {Patients.Count}\n\n" +
-               $"Кількість палат: {Rooms.Count}\n\n" +
-               $"Кількість пацієнтів у палатах: {totalPatientsInRooms}\n\n" +
-               $"Кількість медичних записів: {Records.Count}\n\n";
+        return $"\n=== СТАТИСТИКА ЛІКАРНІ ===\n" +
+               $"Кількість лікарів: {Doctors.Count}\n" +
+               $"Кількість зареєстрованих пацієнтів: {Patients.Count}\n" +
+               $"Кількість палат: {Rooms.Count}\n" +
+               $"Кількість пацієнтів у палатах: {totalPatientsInRooms}\n" +
+               $"Кількість медичних записів: {Records.Count}\n";
     }
 }

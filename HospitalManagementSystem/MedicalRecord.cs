@@ -15,7 +15,7 @@ public class MedicalRecord
         Description = description;
     }
 
-    public void WriteMedicalRecord(MedicalRecord medicalRecord)
+    public static void WriteMedicalRecord(MedicalRecord medicalRecord)
     {
         Console.WriteLine($"Пацієнт: {medicalRecord.Patient}\n" +
                           $"Лікує: {medicalRecord.Doctor}\n" +
