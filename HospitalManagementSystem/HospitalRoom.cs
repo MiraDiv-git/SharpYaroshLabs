@@ -1,0 +1,28 @@
+namespace HospitalManagementSystem;
+
+public class HospitalRoom
+{
+    public int RoomNumber { get; set; }
+    public int Capacity { get; set; }
+    public List<Patient> Patients;
+    public int CurrentPatientCount => Patients.Count;
+    public HospitalRoom(int roomNumber, int capacity)
+    {
+        RoomNumber = roomNumber;
+        Capacity = capacity;
+        Patients = new List<Patient>();
+    }
+
+    public void AddPatient(Patient patient)
+    {
+        if (Patients.Count < Capacity)
+        {
+            Patients.Add(patient);
+            Console.WriteLine($"Пацієнт {patient.Name} доданий у палату №{RoomNumber}.");
+        }
+        else
+        {
+            throw new InvalidOperationException($"Палата №{RoomNumber} переповнена! (місткість: {Capacity})");
+        }
+    }
+}
