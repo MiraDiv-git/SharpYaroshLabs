@@ -21,16 +21,19 @@ public class Hospital
     public void AddDoctor(Doctor doctor)
     {
         Doctors.Add(doctor);
+        Console.WriteLine($"Лікар {doctor.Name} ({doctor.Specialization}) доданий до системи");
     }
 
     public void RegisterPatient(Patient patient)
     {
         Patients.Add(patient);
+        Console.WriteLine($"Пацієнт {patient.Name}, {patient.Age} років, зареєстрований");
     }
 
     public void CreateRoom(HospitalRoom room)
     {
         Rooms.Add(room);
+        Console.WriteLine($"Палата №{room.RoomNumber} створена (місткість: {room.Capacity})");
     }
 
     public void HospitalizePatient(int patientId, int roomNumber)
@@ -38,28 +41,25 @@ public class Hospital
         Patient patient = Patients.Find(p => p.Id == patientId);
         if (patient == null)
         {
+            Console.WriteLine($"Пацієнт з ID {patientId} не знайдений!");
             return;
         }
 
         HospitalRoom room = Rooms.Find(r => r.RoomNumber == roomNumber);
         if (room == null)
         {
+            Console.WriteLine($"Палата №{roomNumber} не знайдена!");
             return;
         }
 
-        try
-        {
-            room.AddPatient(patient);
-            totalPatientsInRooms++;
-        }
-        catch (InvalidOperationException)
-        {
-        }
+        room.AddPatient(patient);
+        totalPatientsInRooms++;
     }
 
     public void AddMedicalRecord(MedicalRecord record)
     {
         Records.Add(record);
+        Console.WriteLine($"Медичний запис створено: {record.Patient.Name} -> {record.Doctor.Name}");
     }
 
     public List<MedicalRecord> GetPatientHistory(int patientId)

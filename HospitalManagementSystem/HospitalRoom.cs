@@ -19,10 +19,11 @@ public class HospitalRoom
         if (Patients.Count < Capacity)
         {
             Patients.Add(patient);
+            Console.WriteLine($"Пацієнт {patient.Name} доданий у палату №{RoomNumber}");
         }
         else
         {
-            Console.WriteLine($"Палата №{RoomNumber} переповнена! (місткість: {Capacity})");
+            Console.WriteLine($"Палата №{RoomNumber} переповнена! Неможливо додати пацієнта.");
         }
     }
 }
