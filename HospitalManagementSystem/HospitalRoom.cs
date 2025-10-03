@@ -6,6 +6,7 @@ public class HospitalRoom
     public int Capacity { get; set; }
     public List<Patient> Patients;
     public int CurrentPatientCount => Patients.Count;
+    
     public HospitalRoom(int roomNumber, int capacity)
     {
         RoomNumber = roomNumber;
@@ -18,11 +19,10 @@ public class HospitalRoom
         if (Patients.Count < Capacity)
         {
             Patients.Add(patient);
-            Console.WriteLine($"Пацієнт {patient.Name} доданий у палату №{RoomNumber}.");
         }
         else
         {
-            throw new InvalidOperationException($"Палата №{RoomNumber} переповнена! (місткість: {Capacity})");
+            Console.WriteLine($"Палата №{RoomNumber} переповнена! (місткість: {Capacity})");
         }
     }
 }
