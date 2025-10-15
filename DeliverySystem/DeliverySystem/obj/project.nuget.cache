@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zHK2KyHA9t0=",
+  "success": true,
+  "projectFilePath": "/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/DeliverySystem.csproj",
+  "expectedPackageFiles": [
+    "/home/miradiv/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

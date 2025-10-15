@@ -1,0 +1,15 @@
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/bin/Debug/net8.0/DeliverySystem
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/bin/Debug/net8.0/DeliverySystem.deps.json
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/bin/Debug/net8.0/DeliverySystem.runtimeconfig.json
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/bin/Debug/net8.0/DeliverySystem.dll
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/bin/Debug/net8.0/DeliverySystem.pdb
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.AssemblyInfoInputs.cache
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.AssemblyInfo.cs
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.csproj.CoreCompileInputs.cache
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.sourcelink.json
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.dll
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/refint/DeliverySystem.dll
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.pdb
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/DeliverySystem.genruntimeconfig.cache
+/home/miradiv/RiderProjects/SharpYaroshLabs/DeliverySystem/DeliverySystem/obj/Debug/net8.0/ref/DeliverySystem.dll
