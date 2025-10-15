@@ -1,3 +1,3 @@
 # Лабораторна робота №3
 ## Виконав: ст. гр. ПД-21 Терьохін М. А.
-![Tests](godofcs.png)
+![Tests](Screens/godofcs.png)
