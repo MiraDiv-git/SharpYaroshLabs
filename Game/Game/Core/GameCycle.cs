@@ -187,17 +187,17 @@ public class GameCycle : IDisposable
         
         float alpha = 0f;
     
-        if (logoTime < 0.75f) // Фейд-ин: 0.75 сек (25%)
+        if (logoTime < 0.75f)
         {
-            alpha = logoTime / 0.75f; // от 0 до 1
+            alpha = logoTime / 0.75f;
         }
-        else if (logoTime < 2.25f) // Показ: 1.5 сек (50%)
+        else if (logoTime < 2.25f)
         {
             alpha = 1f;
         }
-        else if (logoTime < 3f) // Фейд-аут: 0.75 сек (25%)
+        else if (logoTime < 3f)
         {
-            alpha = 1f - (logoTime - 2.25f) / 0.75f; // от 1 до 0
+            alpha = 1f - (logoTime - 2.25f) / 0.75f;
         }
     
         Color tint = ColorFromNormalized(new Vector4(1f, 1f, 1f, alpha));
