@@ -180,7 +180,7 @@ public class GameCycle : IDisposable
         Color bg = new Color(32,32,32,255);
         ClearBackground(bg); 
         
-        float scale = 0.5f; 
+        float scale = 1f; 
         
         int x = Standard.GetScreenCenter('x') - (int)(logo.Width * scale) / 2;
         int y = Standard.GetScreenCenter('y') - (int)(logo.Height * scale) / 2;
