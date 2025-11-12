@@ -32,7 +32,7 @@ public class Menu
          
          foreach (var food in categoryGroup.OrderBy(f => f.Name))
          {
-            Console.WriteLine($"\n{food.Name} - {food.PortionSize}g | {food.Price:F2}₴");
+            Console.WriteLine($"\n{food.Name} - {food.PortionSize}g | {food.Price:C}");
             if (!string.IsNullOrWhiteSpace(food.Description))
                Console.WriteLine($"Description: {food.Description}");
          }
