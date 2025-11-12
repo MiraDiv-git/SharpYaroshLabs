@@ -20,13 +20,13 @@ public class Menu
    public void AddFood(Food food)
    {
       _foods.Add(food);
-      Console.WriteLine($"Successfully added new food: {food.Name}");
+      Console.WriteLine($"Успішно додано нову страву: {food.Name}");
    }
 
    public void AddDrink(Drink drink)
    {
       _drinks.Add(drink);
-      Console.WriteLine($"Successfully added new drink: {drink.Name}");
+      Console.WriteLine($"Успішно додано новий напій: {drink.Name}");
    }
    
    public void PrintMenu()
@@ -36,7 +36,7 @@ public class Menu
          .GroupBy(item => item.Category)
          .OrderBy(g => g.Key);
    
-      Console.WriteLine("\n\nRusty Rub Restaurant\n\n====== MENU ======");
+      Console.WriteLine("\n\nРесторан \"Хтивий Краб\"\n\n====== МЕНЮ ======");
       foreach (var categoryGroup in allItems)
       {
          Console.WriteLine($"\n=== {categoryGroup.Key.ToFriendlyString()} ===");
@@ -46,16 +46,16 @@ public class Menu
             Console.Write($"\n{item.Name} - ");
          
             if (item is Food food)
-               Console.Write($"{food.PortionSize} g");
+               Console.Write($"{food.PortionSize} г");
             else if (item is Drink drink)
-               Console.Write($"{drink.DrinkLitrage} ml");
+               Console.Write($"{drink.DrinkLitrage} мл");
             
             Console.Write($" | {item.Price:C}");
          
             if (item is Drink d)
             {
                if (d.AlcoholPercentage.HasValue)
-                  Console.Write($" | Alcohol: {d.AlcoholPercentage.Value}%");
+                  Console.Write($" | Алкоголь: {d.AlcoholPercentage.Value}%");
                else
                   Console.WriteLine();
             }
