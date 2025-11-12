@@ -3,7 +3,7 @@ using RestaurantOrderSystem.Interfaces;
 
 namespace RestaurantOrderSystem.BaseClasses;
 
-public class Food : IEatable
+public class Food : IEatable, IMenuItem
 {
     public string Name { get; set; }
     public string? Description { get; set; }

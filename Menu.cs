@@ -1,4 +1,5 @@
 using RestaurantOrderSystem.BaseClasses;
+using RestaurantOrderSystem.Interfaces;
 
 namespace RestaurantOrderSystem;
 
@@ -14,27 +15,53 @@ public static class EnumExtensions
 public class Menu
 {
    private readonly List<Food> _foods = new();
+   private readonly List<Drink> _drinks = new();
 
    public void AddFood(Food food)
    {
       _foods.Add(food);
+      Console.WriteLine($"Successfully added new food: {food.Name}");
+   }
+
+   public void AddDrink(Drink drink)
+   {
+      _drinks.Add(drink);
+      Console.WriteLine($"Successfully added new drink: {drink.Name}");
    }
    
    public void PrintMenu()
    {
-      var grouped = _foods
-         .GroupBy(f => f.Category)
+      var allItems = _foods.Cast<IMenuItem>()
+         .Concat(_drinks)
+         .GroupBy(item => item.Category)
          .OrderBy(g => g.Key);
-      
-      foreach (var categoryGroup in grouped)
+   
+      Console.WriteLine("\n\nRusty Rub Restaurant\n\n====== MENU ======");
+      foreach (var categoryGroup in allItems)
       {
          Console.WriteLine($"\n=== {categoryGroup.Key.ToFriendlyString()} ===");
-         
-         foreach (var food in categoryGroup.OrderBy(f => f.Name))
+      
+         foreach (var item in categoryGroup.OrderBy(i => i.Name))
          {
-            Console.WriteLine($"\n{food.Name} - {food.PortionSize}g | {food.Price:C}");
-            if (!string.IsNullOrWhiteSpace(food.Description))
-               Console.WriteLine($"Description: {food.Description}");
+            Console.Write($"\n{item.Name} - ");
+         
+            if (item is Food food)
+               Console.Write($"{food.PortionSize} g");
+            else if (item is Drink drink)
+               Console.Write($"{drink.DrinkLitrage} ml");
+            
+            Console.Write($" | {item.Price:C}");
+         
+            if (item is Drink d)
+            {
+               if (d.AlcoholPercentage.HasValue)
+                  Console.Write($" | Alcohol: {d.AlcoholPercentage.Value}%");
+               else
+                  Console.WriteLine();
+            }
+            
+            if (!string.IsNullOrWhiteSpace(item.Description))
+               Console.WriteLine($"\n{item.Description}");
          }
       }
    }
