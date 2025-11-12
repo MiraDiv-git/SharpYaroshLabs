@@ -4,7 +4,7 @@ namespace SmartHomeSystem;
 
 public abstract class Device : ISwitchable
 {
-    public string Name { get; set; } = string.Empty;
+    public abstract string Name { get; set; }
     public bool IsOn { get; protected set; }
     
     public abstract void TurnOn();

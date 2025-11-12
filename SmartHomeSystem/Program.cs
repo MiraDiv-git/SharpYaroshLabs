@@ -8,19 +8,19 @@ class Program
     {
         SmartHomeController controller = new SmartHomeController();
         
-        Light lamp = new Light("Лампа у вітальні");
+        Light lamp = new Light();
         controller.AddDevice(lamp);
         controller.AddEnergyDevice(lamp);
         
-        AirConditioner cond = new AirConditioner("Кондиціонер у спальні");
+        AirConditioner cond = new AirConditioner();
         controller.AddDevice(cond);
         controller.AddEnergyDevice(cond);
         
-        CoffeeMachine cof = new CoffeeMachine("Кавомашина на кухні");
+        CoffeeMachine cof = new CoffeeMachine();
         controller.AddDevice(cof);
         controller.AddEnergyDevice(cof);
         
-        MotionSensor observer = new MotionSensor("Датчик руху у коридорі");
+        MotionSensor observer = new MotionSensor();
         controller.AddDevice(observer);
         
         

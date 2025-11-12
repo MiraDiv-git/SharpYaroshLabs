@@ -4,20 +4,9 @@ namespace SmartHomeSystem.Devices;
 
 public class Light : Device, IEnergyConsumer
 {
+    public override string Name { get; set; } = "Лампа у вітальні";
     public string DeviceName => Name;
-    public int PowerConsumption { get; }
-
-    public Light(string deviceName)
-    {
-        Name = deviceName;
-        PowerConsumption = 60;
-    }
-
-    public Light()
-    {
-        Name = "Безіменне джерело світла";
-        PowerConsumption = 60;
-    }
+    public int PowerConsumption { get; } = 60;
 
     public override void TurnOn()
     {

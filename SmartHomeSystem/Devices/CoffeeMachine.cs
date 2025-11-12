@@ -4,20 +4,9 @@ namespace SmartHomeSystem.Devices;
 
 public class CoffeeMachine : Device, IEnergyConsumer
 {
+    public override string Name { get; set; } = "Кавомашина на кухні";
     public string DeviceName => Name;
-    public int PowerConsumption { get; }
-
-    public CoffeeMachine(string deviceName)
-    {
-        Name = deviceName;
-        PowerConsumption = 1000;
-    }
-
-    public CoffeeMachine()
-    {
-        Name = "Безіменна кавова машина";
-        PowerConsumption = 1000;
-    }
+    public int PowerConsumption { get; } = 1000;
 
     public override void TurnOn()
     {

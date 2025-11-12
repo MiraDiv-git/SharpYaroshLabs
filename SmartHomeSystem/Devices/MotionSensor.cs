@@ -2,15 +2,7 @@ namespace SmartHomeSystem.Devices;
 
 public class MotionSensor : Device
 {
-    public MotionSensor(string name)
-    {
-        Name = name;
-    }
-
-    public MotionSensor()
-    {
-        Name = "Безіменний сенсор руху";
-    }
+    public override string Name { get; set; } = "Датчик руху у коридорі";
 
     public override void TurnOn()
     {

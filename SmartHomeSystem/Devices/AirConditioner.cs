@@ -4,20 +4,9 @@ namespace SmartHomeSystem.Devices;
 
 public class AirConditioner : Device, IEnergyConsumer
 {
+    public override string Name { get; set; } = "Кондиціонер у спальні";
     public string DeviceName => Name;
-    public int PowerConsumption { get; }
-
-    public AirConditioner(string deviceName)
-    {
-        Name = deviceName;
-        PowerConsumption = 2000;
-    }
-
-    public AirConditioner()
-    {
-        Name = "Безіменний повітрянний кондиціонер";
-        PowerConsumption = 2000;
-    }
+    public int PowerConsumption { get; } = 2000;
 
     public override void TurnOn()
     {
