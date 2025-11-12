@@ -1,6 +1,7 @@
 ﻿using RestaurantOrderSystem.BaseClasses;
 using RestaurantOrderSystem.Enums;
 using System.Globalization;
+using RestaurantOrderSystem.Interfaces;
 
 namespace RestaurantOrderSystem;
 
@@ -10,7 +11,12 @@ class Program
     {
         CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("uk-UA");
         CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("uk-UA");
-        
+
+        DoMenu();
+    }
+
+    static void DoMenu()
+    {
         Menu menu = new Menu();
         
         menu.AddFood(new Food(
