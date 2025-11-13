@@ -14,25 +14,25 @@ public static class EnumExtensions
 
 public class Menu
 {
-   private readonly List<Food> _foods = new();
-   private readonly List<Drink> _drinks = new();
+   public List<Food> Foods = new();
+   public List<Drink> Drinks = new();
 
    public void AddFood(Food food)
    {
-      _foods.Add(food);
+      Foods.Add(food);
       Console.WriteLine($"Успішно додано нову страву: {food.Name}");
    }
 
    public void AddDrink(Drink drink)
    {
-      _drinks.Add(drink);
+      Drinks.Add(drink);
       Console.WriteLine($"Успішно додано новий напій: {drink.Name}");
    }
    
    public void PrintMenu()
    {
-      var allItems = _foods.Cast<IMenuItem>()
-         .Concat(_drinks)
+      var allItems = Foods.Cast<IMenuItem>()
+         .Concat(Drinks)
          .GroupBy(item => item.Category)
          .OrderBy(g => g.Key);
    
