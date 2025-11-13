@@ -22,7 +22,6 @@ public class Order
 
     public void PrintOrder()
     {
-        Items;
-        // Я ебал блять я не знаю как это реализовать
+        
     }
 }
