@@ -1,7 +1,6 @@
 ﻿using RestaurantOrderSystem.BaseClasses;
 using RestaurantOrderSystem.Enums;
 using System.Globalization;
-using RestaurantOrderSystem.Interfaces;
 
 namespace RestaurantOrderSystem;
 
@@ -47,5 +46,29 @@ class Program
             180.89m));
         
         menu.PrintMenu();
+
+        OrderManager om = new OrderManager();
+        om.CreateOrder(new Order(DateTime.Now));
+        om.CreateOrder(new Order(DateTime.Now));
+        om.CreateOrder(new Order(DateTime.Now));
+        
+        om.AddItemToOrder(1, menu.Foods[0]);
+        om.AddItemToOrder(1, menu.Drinks[0]);
+        
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        om.AddItemToOrder(2, menu.Drinks[1]);
+        
+        om.AddItemToOrder(3, menu.Drinks[2]);
+        om.AddItemToOrder(3, menu.Foods[0]);
+        
+        om.PrintAllOrders();
+        
+        om.ChangeOrderStatus(2, OrderStatus.Готується);
+        om.PrintOrder(2);
     }
 }
