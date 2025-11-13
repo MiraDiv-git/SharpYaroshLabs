@@ -62,6 +62,8 @@ public class Menu
             
             if (!string.IsNullOrWhiteSpace(item.Description))
                Console.WriteLine($"\n{item.Description}");
+            else
+               Console.WriteLine();
          }
       }
    }

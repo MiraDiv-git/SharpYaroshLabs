@@ -29,13 +29,13 @@ public class Order
 
     public void PrintOrder()
     {
-            Console.WriteLine($"\n=== Замовлення №{Id} ===\n" 
-                              + $"== Статус: {Status.ToString()}\n" 
-                              + new string('_', 40));
-            
-            foreach (var item in Items)
-                Console.WriteLine($"{item.Name} - {item.Price:C}");
-            
-            Console.WriteLine($"\nУсього: {totalPrice:C}\n" + new string('¯', 40));
+        Console.WriteLine($"\n=== Замовлення №{Id} ===\n" 
+                          + $"== Статус: {Status.ToString()} ==\n" 
+                          + new string('_', 40));
+        
+        foreach (var item in Items)
+            Console.WriteLine($"{item.Name} - {item.Price:C}");
+        
+        Console.WriteLine($"\nУсього: {totalPrice:C}\n" + new string('¯', 40));
     }
 }
